@@ -36,14 +36,14 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 0;
   color: #124265;
 }
@@ -93,7 +93,7 @@ section {
     }
   }
 
-/* Navigation Menu */
+Navigation Menu
 
 .navbar {
     padding: 0;
@@ -196,7 +196,7 @@ section {
     transition: color 0.3s, cursor 0.3s;
 }
   
-#hero .social-links a:hover {
+#hero .container .social-links a:hover {
     color: #7f00ff !important; 
     cursor: pointer;
 }
@@ -216,6 +216,105 @@ section {
       font-size: 20px;
       line-height: 24px;
     }
+}
+
+/* Skill Section */
+
+#skill .icon-boxes {
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+}
+
+#skill .icon-box {
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center; /* Center align the content */
+  height: 30vh;
+  width: 35vh;
+  border-radius: 10%;
+}
+
+#skill .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#skill .icon-box .title a {
+  color: #45505b;
+  transition: 0.3s;
+  text-decoration: none;
+
+}
+
+#skill .icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+#skill .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #7f00ff;
+  margin: 0 auto; /* Center align the icon */
+}
+
+#skill .icon-box .icon i {
+  color: #45505b;
+}
+
+#skill .icon-box .icon i:hover {
+  color: #7f00ff;
+}
+
+#skill .icon-box .icon title:hover {
+  color: #7f00ff;
+}
+
+#skill .icon-box:hover {
+  transform: scale(1.08);
+}
+
+@media (max-height: 800px) {
+  #skill {
+    height: auto;
+  }
+
+  #skill .icon-box {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  #skill {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #skill .icon-box {
+    height: auto; /* Adjust height for smaller screens */
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #skill .icon-box {
+    width: 100%; /* Make the boxes full width on smaller screens */
+    border-radius: 0; /* Remove border-radius for smaller screens */
+  }
 }
 
 /* Contact Section */
@@ -266,16 +365,16 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   width: 100%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -284,23 +383,23 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email] {
+.contact .email-form input[type=text],
+.contact .email-form input[type=email] {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .email-form button[type=submit] {
   background: #45505b;
   border: 0;
   padding: 10px 35px;
@@ -309,7 +408,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .email-form button[type=submit]:hover {
   background: #7f00ff;
 }
 
@@ -321,4 +420,43 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Footer */
+
+#footer h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+#footer p {
+  font-size: 15px;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+  /* padding-bottom: 30px 40px; */
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #0563bb;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #7f00ff;
+  color: #fff;
+  text-decoration: none;
 }
