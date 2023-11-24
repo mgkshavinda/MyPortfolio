@@ -147,7 +147,7 @@ section {
 #hero {
     width: 100%;
     height: 90vh;
-    background: url("../img/hero-bg.png") top right no-repeat;
+    background: url("../img/hero-bg\(1\).jpg") top right no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -201,7 +201,7 @@ section {
     transition: color 0.3s, cursor 0.3s;
 }
   
-#hero .container .social-links a:hover {
+#hero .social-links a:hover {
     color: #7f00ff !important; 
     cursor: pointer;
 }
@@ -229,6 +229,62 @@ section {
       font-size: 20px;
       line-height: 24px;
     }
+}
+
+/* Resume Section */
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #7f00ff;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #7f00ff;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #7f00ff;
 }
 
 /* Skill Section */
@@ -511,12 +567,12 @@ section {
   margin: 0 0 40px 0;
 }
 
-#footer .social-links {
-  margin: 0 0 40px 0;
-  /* padding-bottom: 30px 40px; */
+#footer .footer-social-links {
+  align-items: center;
+  /* margin: 0 0 40px 0; */
 }
 
-#footer .social-links a {
+#footer .footer-social-links a {
   font-size: 18px;
   display: inline-block;
   background: #0563bb;
@@ -529,9 +585,10 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  padding: 0 50px 0 0;
 }
 
-#footer .social-links a:hover {
+#footer .footer-social-links a:hover {
   background: #7f00ff;
   color: #fff;
   text-decoration: none;
