@@ -56,7 +56,7 @@
                 <a href="https://github.com/MGKShavinda" target="_blank"><i class="fa fa-github"></i></a>
                 <a href="https://www.behance.net/kavindushavinda" target="_blank"><i class="fa fa-behance"></i></a>
             </div >
-            <button class="resume-btn" role="button"><span class="text">Download Resume</span><span class="text-after">Download</span></button>
+            <button id="resume-btn" class="resume-btn" role="button"><span class="text">Download Resume</span><span class="text-after">Download</span></button>
         </div>
     </section>
     <!-- End of Hero Section -->
@@ -334,7 +334,7 @@
     
                 <div class="col-lg-8 mt-5 mt-lg-0">
     
-                <form action="forms/contact.php" method="post" role="form" class="email-form">
+                <form id="contactForm" method="post" role="form" class="email-form">
                     <div class="row">
                     <div class="col-md-6 form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -353,8 +353,23 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
+                    <div class="text-center"><button type="submit" id="liveToastBtn">Send Message</button></div>
                 </form>
+
+                <!-- Toast container -->
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="./components/img/mgk.ico" class="rounded me-2" alt="..." style="height: 20px; width: auto;">
+                        <strong class="me-auto">Kavindu Shavinda</strong>
+                        <small>Now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        Thank You. I'll contact you soon.
+                      </div>
+                    </div>
+                  </div>
     
                 </div>
     
@@ -388,6 +403,9 @@
 
     <!-- Main Js file -->
     <script src="./components/js/main.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-rTHMlcwuQ3wi5ZpnpbTKo0u8FJUB96JPR51gRV3UoJ9BAzqLlO3uLvq4Se8tZDlW" crossorigin="anonymous"></script>
 
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
