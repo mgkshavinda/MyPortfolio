@@ -159,7 +159,7 @@ section {
 }
   
 #hero:before {
-    content: "";
+    /* content: ""; */
     /* background: rgba(255, 255, 255, 0.2); */
     position: absolute;
     bottom: 0;
@@ -204,7 +204,6 @@ section {
 #hero .social-links a:hover {
     color: #7f00ff !important; 
     cursor: pointer;
-    font-size: 34px;
 }
 
 @media (max-width: 1024px) {
@@ -252,10 +251,6 @@ section {
 
 .resume-btn .text {
   font-weight: 600;
-}
-
-.resume-btn .text-after {
-  
 }
 
 .resume-btn span:first-child {
