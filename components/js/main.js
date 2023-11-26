@@ -1,3 +1,19 @@
+// Header
+document.addEventListener("DOMContentLoaded", function () {
+    var header = document.getElementById("header");
+  
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+        header.classList.add("header-scrolled");
+        header.classList.remove("header-transparent");
+      } else {
+        header.classList.remove("header-scrolled");
+        header.classList.add("header-transparent");
+      }
+    });
+});
+  
+
 // Hero Section Effect
 document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('.typed', {
