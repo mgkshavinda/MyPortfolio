@@ -12,8 +12,36 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
-  
 
+
+// Navbar Active Status
+document.addEventListener("DOMContentLoaded", function () {
+    var navLinks = document.querySelectorAll(".nav-link");
+  
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+  
+        // Remove the 'active' class from all links
+        navLinks.forEach(function (navLink) {
+          navLink.classList.remove("active");
+        });
+  
+        // Add the 'active' class to the clicked link
+        link.classList.add("active");
+  
+        // Scroll to the section corresponding to the clicked link
+        var targetId = link.getAttribute("href").substring(1);
+        var targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+});
+  
+  
 // Hero Section Effect
 document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('.typed', {
