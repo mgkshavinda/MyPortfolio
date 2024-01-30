@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Download Button 
 document.getElementById("resume-btn").addEventListener("click", function() {
     // shareable link of CV file
-    var downloadLink = 'https://drive.google.com/file/d/19S1oSAd_46T5FhZ0vpzyDRDjDRRP2lAO/view?usp=sharing';
+    var downloadLink = 'https://drive.google.com/drive/folders/1TApf44Eqc_Rau7qt0DHy5ZPyUyM_Rz9S?usp=sharing';
     window.open(downloadLink, '_blank');
 });
 
