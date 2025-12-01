@@ -44,11 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
   
 // Hero Section Effect
 document.addEventListener('DOMContentLoaded', function() {
-    var typed = new Typed('.typed', {
-        strings: ["Trainee Software Engineer", "Undergraduate", "Designer", "Developer"],
-        typeSpeed: 120, // typing speed in milliseconds
-        backSpeed: 40, // backspacing speed in milliseconds
-        loop: true // loop the animation
+    var typed = new Typed(".typed", {
+      strings: [
+        "Associate Software Engineer",
+        "Undergraduate",
+        "Designer",
+        "Developer",
+      ],
+      typeSpeed: 120, // typing speed in milliseconds
+      backSpeed: 40, // backspacing speed in milliseconds
+      loop: true, // loop the animation
     });
 });
 
